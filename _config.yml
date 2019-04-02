@@ -1,4 +1,4 @@
 theme: jekyll-theme-architect
-baseurl: ""
-url: "stav98.github.io"
+baseurl: "UrsaRobotics/"
+url: "https://stav98.github.io"
 permalink: /:title
