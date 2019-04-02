@@ -1,37 +1,65 @@
-## Welcome to GitHub Pages
+Σ' αυτό το αποθετήριο θα δημοσιεύονται τα σχέδια και ο κώδικας του έργου Έξυπνο Σπίτι Ανοιχτών Τεχνολογιών. 
+----------------------------------------------------------------------------------------------------------
 
-You can use the [editor on GitHub](https://github.com/stav98/ursarobotics.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+**Ομάδα:** Ursa Robotics<br/>
+**Σχολείο:** 1ο ΕΠΑ.Λ. Πρέβεζας<br/>
+**Τίτλος έργου:** Έξυπνο Σπίτι Ανοιχτών Τεχνολογιών<br/> 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[Σχέδια μακέτας και χαρακτηρισμός ακροδεκτών](Schematics.md)<br/>
+[Ανανεωμένος πίνακας υλικών με τιμές και προμηθευτές](Parts_Table.md)<br/>
 
-### Markdown
+Περιγραφή έργου
+===============
+Η ομάδα μας θα κατασκευάσει μακέτα διώροφου σπιτιού (μεζονέτα) όπου θα φαίνονται όλες οι ηλεκτρικές συσκευές – εξαρτήματα των οποίων είναι δυνατός ο τηλεχειρισμός. Μερικές από αυτές τις συσκευές είναι:
+1.	Φωτισμός
+2.	Πρίζες
+3.	Θερμοσίφωνας και εποπτεία θερμοκρασίας νερού
+4.	Θερμόμετρα χώρου
+5.	Μετρητής υγρασίας χώρου
+6.	Έλεγχος σκίασης παραθύρων 
+7.	Θερμαντικά σώματα
+8.	Έλεγχος θυρών-παραθύρων (ανοικτό-κλειστό)
+9.	Έλεγχος κλιματισμού
+10.	Μέτρηση της καταναλισκόμενης ενέργειας  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Το έργο μπορεί να χρησιμοποιηθεί ως εποπτικό μέσο για την διδασκαλία των τεχνολογιών IOT σε μαθητές πληροφορικής, ηλεκτρονικής και ηλεκτρολογίας.
 
-```markdown
-Syntax highlighted code block
+Για τον ρόλο του πελάτη (MQTT client) θα χρησιμοποιήσουμε ένα module με το γνωστό chip ESP-8266. Στο module θα συνδέονται:  
+•	οι ενεργοποιητές όπως ηλεκτρονόμοι (relays), κινητήρες   
+•	οι αισθητήρες όπως θερμόμετρα, φωτοαντιστάσεις, ειδικοί αισθητήρες υγρασίας πίεσης κλπ.
 
-# Header 1
-## Header 2
-### Header 3
+Το συγκεκριμένο module διαθέτει ισχυρό μικροελεγκτή τεχνολογίας 32bit με πληθώρα περιφερειακών και επικοινωνία μέσω WiFi 802.11n. Εναλλακτικά μπορεί να χρησιμοποιηθεί το εξελιγμένο ESP-32 το οποίο είναι πολύ ισχυρότερο.
 
-- Bulleted
-- List
+Αν και για το ESP-8266 υπάρχει toolchain για προγραμματισμό μέσω Arduino IDE εμείς θα τα προγραμματίσουμε σε microPython. Πρόκειται για μια περιορισμένη έκδοση της Python 3.x ειδικά σχεδιασμένη για μικροελεγκτές. Ο λόγος που επιλέξαμε την Python αντί της wiring (C++), είναι γιατί αυτή διδάσκεται στον τομέα πληροφορικής του ΕΠΑΛ.
 
-1. Numbered
-2. List
+Επειδή το ESP-8266 δεν διαθέτει αρκετές θύρες εισόδου-εξόδου για τον έλεγχο όλων των συσκευών της μακέτας, θα χρησιμοποιήσουμε ένα arduino micro ως port expander. Το arduino θα λειτουργεί ως I2C slave και θα επικοινωνεί με το ESP-8266 μέσω του διαύλου I2C. Ο προγραμματισμός του arduino θα γίνει σε γλώσσα wiring. 
 
-**Bold** and _Italic_ and `Code` text
+Το ESP-8266 θα επικοινωνεί μέσω wifi με ένα Raspberry PI 3 το οποίο θα λειτουργεί ως MQTT broker. Στο Raspberry είναι εγκατεστημένο το mosquitto το οποίο είναι ένας open source MQTT broker και το OpenHab2 το οποίο είναι το λογισμικό του server για τον έλεγχο του έξυπνου σπιτιού.
 
-[Link](url) and ![Image](src)
-```
+Από έναν υπολογιστή πελάτη μέσω πρωτοκόλλου HTTP μπορούμε με ένα κοινό Browser να εποπτεύσουμε ή να ελέγξουμε όλες τις συσκευές IOT του σπιτιού.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Επίσης το ίδιο μπορεί να γίνει από ένα smartphone με την ειδική εφαρμογή η οποία επικοινωνεί με το server OpenHab.
 
-### Jekyll Themes
+Ακολουθεί το block διάγραμμα της κατασκευής
+![alt text](https://github.com/stav98/UrsaRobotics_SmartHome/blob/master/images/iot1.png)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/stav98/ursarobotics.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Φυσικά είναι δυνατή η πρόσβαση από τον έξω κόσμο, μέσω Internet εγκαθιστώντας μια σύνδεση VPN, μεταξύ του Raspberry και ενός smart phone.
 
-### Support or Contact
+Επίσης μπορεί το raspberry να λειτουργεί ως MQTT gateway και να συνεργαστεί με άλλες πλατφόρμες IOT που υπάρχουν στο διαδίκτυο, όπως το Alexa της Amazon. 
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Πίνακας βασικών υλικών
+======================
+
+[Ανανεωμένος πίνακας υλικών με τιμές και προμηθευτές](Parts_Table.md)
+
+Σχέδια και συνδεσμολογίες
+=========================
+
+[Σχέδια μακέτας και χαρακτηρισμός ακροδεκτών](Schematics.md)
+
+Σύνδεσμοι λογισμικού που θα χρησιμοποιήσουμε
+============================================
+Micro Python: https://github.com/micropython/micropython/tree/master/ports/esp8266<br/>
+Open Hab: https://www.openhab.org/docs/installation/rasppi.html<br/>
+Arduino: https://www.arduino.cc/<br/>
+Mosquitto: https://mosquitto.org/<br/>
