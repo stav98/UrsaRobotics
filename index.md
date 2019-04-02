@@ -1,11 +1,10 @@
 <div>
-<ul>
   {% for post in site.posts %}
-    <li>
+    <entry>
       <a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a>
-    </li>
+      <content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
   {% endfor %}
-</ul>
 </div>
 
 <h1>Εισαγωγή</h1>
