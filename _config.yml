@@ -1,1 +1,4 @@
 theme: jekyll-theme-architect
+baseurl: ""
+url: "stav98.github.io"
+permalink: /:title
