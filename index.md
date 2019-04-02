@@ -8,6 +8,15 @@
 </ul>
 </div>
 
+<ul class="posts">
+    {% for post in site.posts %}
+    <li> 
+     <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    <span class="right date">{{ post.date | date_to_string }}</span>
+    </li>
+    {% endfor %}
+</ul>
+
 <h1>Εισαγωγή</h1>
 Είμαστε η ομάδα Ursa Robotics από το 1ο ΕΠΑ.Λ. Πρέβεζας. Συμμετέχουμε στον πανελλήνιο διαγωνισμό εκπαιδευτικής ρομποτικής του ΕΕΛΛΑΚ για το σχολ. έτος 2018-19. Η ομάδα μας αποτελείται από μαθητές των τομέων Πληροφορικής και Ηλεκτρολογίας - Ηλεκτρονικής.
 
