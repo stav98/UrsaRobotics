@@ -1,2 +1,3 @@
 title: Η σελίδα Ursa Robotics
-theme: minima
+#theme: minima
+theme: jekyll-theme-architect
