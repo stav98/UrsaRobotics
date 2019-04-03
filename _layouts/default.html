@@ -40,14 +40,14 @@
         </ul>
         {% endif %}
         <b>Δημοσιεύσεις</b>
-        <ul>
+        <div>
           {% for post in site.posts %}
             <entry>
-              <li><a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a></li>
+              <a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a><br>
               <!--<content type="html">{{ post.content | xml_escape }}</content>-->
-              </entry>
+            </entry>
           {% endfor %}
-       </ul>
+       </div>
       </header>
       <section>
 
