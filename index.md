@@ -1,15 +1,6 @@
 ---
 layout: default
 ---
-
-<div>
-  {% for post in site.posts %}
-    <entry>
-      <a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a>
-      <!--<content type="html">{{ post.content | xml_escape }}</content>-->
-    </entry>
-  {% endfor %}
-</div>
 <div>
 <h1>Εισαγωγή</h1>
 <p>Είμαστε η ομάδα Ursa Robotics από το 1ο ΕΠΑ.Λ. Πρέβεζας. Συμμετέχουμε στον πανελλήνιο διαγωνισμό εκπαιδευτικής ρομποτικής του ΕΕΛΛΑΚ για το σχολ. έτος 2018-19. Η ομάδα μας αποτελείται από μαθητές των τομέων Πληροφορικής και Ηλεκτρολογίας - Ηλεκτρονικής.</p>
