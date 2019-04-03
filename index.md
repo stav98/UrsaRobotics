@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <div>
   {% for post in site.posts %}
     <entry>
