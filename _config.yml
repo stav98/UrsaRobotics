@@ -1,6 +1,6 @@
 title: Η σελίδα Ursa Robotics
 theme: jekyll-theme-minimal
 description: Minimal is a theme for GitHub Pages ελλ.
-show_downloads: true
+show_downloads: false
 github.is_user_page: false
 github.is_project_page: false
