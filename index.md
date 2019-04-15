@@ -40,5 +40,6 @@ layout: default
 </ul>
 <p>Το έργο μπορεί να χρησιμοποιηθεί ως εποπτικό μέσο για την διδασκαλία των τεχνολογιών IOT σε μαθητές πληροφορικής, ηλεκτρονικής και ηλεκτρολογίας.</p>
 <p>Από αυτή την ιστοσελίδα θα παρουσιάσουμε τα στάδια κατασκευής του έργου</p>
-<img src="{{ "/assets/images/teamc1.jpg" | relative_url }}">
+<img src="{{ "/assets/images/team_c1.jpg" | relative_url }}">
+<img src="{{ "/assets/images/team_b1.jpg" | relative_url }}">
 </div>
