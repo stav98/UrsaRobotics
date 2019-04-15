@@ -10,3 +10,4 @@ title:  "Κατασκευή της μακέτας"
 <p>Σε επόμενη συνάντηση οι μαθητές ηλεκτρολογίας περάσαν τα καλώδια μέσα από τη μακέτα.</p>
 <img src="{{ "/assets/images/katask_mak4.jpg" | relative_url }}">
 <p>Θα ακολουθήσει κατσκευή των μηχανικών μερών και κόλλημα αυτοκόλλητων ταπετσαριών με υφές όπως αυτές του αρχικού σχεδίου.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/n11vyItty58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
