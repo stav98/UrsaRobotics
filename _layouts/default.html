@@ -43,10 +43,8 @@
         <div>
           {% for post in site.posts %}
             <entry>
-              <ul>
-                <li><a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a></li>
+                <a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a>
                 <!--<content type="html">{{ post.content | xml_escape }}</content>-->
-              </ul>
             </entry>
           {% endfor %}
        </div>
