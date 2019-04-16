@@ -41,7 +41,7 @@
         {% endif %}
         <b>Δημοσιεύσεις</b>
         <div>
-          {% assign sorted = (site.posts | sort: 'name') %}
+          {% assign sorted = (site.posts | sort: 'title') %}
           <!--{% for post in site.posts %}-->
            {% for post in sorted %}
             <entry>
