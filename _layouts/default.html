@@ -41,11 +41,11 @@
         {% endif %}
         <b>Δημοσιεύσεις</b>
         <div>
-          {% assign sorted = (site.posts | sort: 'title') %}
-          <!--{% for post in site.posts %}-->
-           {% for post in sorted %}
+          <!--{% assign sorted = (site.posts | sort: 'title') %}-->
+          {% for post in site.posts %}
+           <!--{% for post in sorted %}-->
             <entry>
-              <a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a><br>
+              <!--<a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a><br>-->
               <!--<content type="html">{{ post.content | xml_escape }}</content>-->
             </entry>
           {% endfor %}
