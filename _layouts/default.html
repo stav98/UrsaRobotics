@@ -41,7 +41,7 @@
         {% endif %}
         <b>Δημοσιεύσεις</b>
         <div>
-          {% assign sorted = (site.posts | sort: 'date') | reverse %}
+          {% assign sorted = (site.posts | sort: 'date') %}
           <!--{% for post in site.posts %}-->
            {% for post in sorted %}
             <entry>
