@@ -1,7 +1,7 @@
 title: Ursa Robotics
 description: Η σελίδα για το Project 'Έξυπνο Σπίτι' του <b>1ου ΕΠΑ.Λ. Πρέβεζας</b>
 logo: /assets/images/logo1.png
-theme: jekyll-theme-minimal
+theme: jekyll-theme-architect
 show_downloads: false
 github.is_user_page: false
 github.is_project_page: false
