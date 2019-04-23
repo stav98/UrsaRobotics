@@ -13,20 +13,29 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1 style="font-size: 32px"><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-        
-        {% if site.logo %}
-          <a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>
-        {% endif %}
-
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-
+	  <div class="header">
+	    <div style="float: left; width: 155px;">
+	      {% if site.logo %}
+            <a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>
+          {% endif %}
+        </div>
+        <div style="float: left; width: 70%; height: 50px;">
+	       <h1 style="font-size: 48px"><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+	    </div>
+	    <div style="float: left;">
+	      <h3>{{ site.description | default: site.github.project_tagline }}</h3>
+	    </div>
+        <div style="float: left; width: 70%;">
+          <p class="view"><a href="https://github.com/stav98/UrsaRobotics_SmartHome" target="_blank">Δείτε το έργο στο GitΗub <small>https://github.com/stav98/UrsaRobotics_SmartHome</small></a></p>
+        </div>
+	  </div>
+      <!--<header>-->
+      <div class="left_sidebar">
         <!--
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
         {% endif %}
-        
+
 
         {% if site.github.is_user_page %}
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
@@ -39,33 +48,56 @@
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
-        <b>Δημοσιεύσεις</b>
-        <div>
-          {% for post in site.posts %}
-            <entry>
-                <a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a><br>
+        <!-- 1o block ---------------------->
+        <div class="block1">
+          <div>Δημοσιεύσεις</div>
+          <div id="content">
+            {% for post in site.posts %}
+			  <ul>
+                <li><a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a></li>
                 <!--<content type="html">{{ post.content | xml_escape }}</content>-->
-            </entry>
-          {% endfor %}
-       </div>
-      </header>
-      <section>
+              </ul>
+            {% endfor %}
+          </div>
+        </div>
+        <!-- 1o block end ------------------->
 
-      {{ content }}
+        <!-- 2o block ---------------------->
+        <div class="block1">
+          <div>Σύνδεσμοι</div>
+          <div id="content">
+			<ul>
+              <li><a href="https://robotics.ellak.gr/robotics_participant/" target="_blank" title="Τα έργα των άλλων σχολείων του διαγωνισμού">
+               Έργα άλλων σχολείων</a></li><br>
+              <li><a href="https://ellak.gr/" target="_blank" title="Μετάβαση">
+               ΕΛ/ΛΑΚ</a></li><br>
+              <li><a href="{{site.baseurl}}/about.html"  title="Μετάβαση">
+               Λίγα λόγια για εμάς</a></li><br>
+            </ul>
+          </div>
+        </div>
+        <br>
+        <!-- 2o block end ------------------->
+      </div>
+      <!--</header> -->
 
-      </section>
-      <footer>
+      <!--<section>-->
+      <div class="main_container">
+        {{ content }}
+      </div>
+
+      <!--</section>-->
+
+      <!--<footer>
         <!--
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
         -->
-        <p><a href="https://robotics.ellak.gr/robotics_participant/" target="_blank" title="Τα έργα των άλλων σχολείων του διαγωνισμού">
-           Έργα άλλων σχολείων</a></p>
-        <p>Αυτό το project κατασκευάστηκε από την ομάδα <strong>Ursa Robotics</strong></p>
-      </footer>
-    </div>
+        <!--
+      </footer> -->
+    </div>  <!--wrapper -->
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
     <script>
