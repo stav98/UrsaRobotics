@@ -36,4 +36,5 @@ layout: default
    </tr>
   </table>
  <!--href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}"-->
+ <a href="./index.html">Αρχική</a>
 </div>
