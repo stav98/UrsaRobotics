@@ -12,14 +12,14 @@
     <![endif]-->
     <!-- highslide config -->
 	<script type="text/javascript" src="{{ "/assets/js/highslide/highslide-full.js" | relative_url }}"></script>
-	<script type="text/javascript" src="/assets/js/highslide/easing_equations.js"></script>
-	<script type="text/javascript" src="/assets/js/highslide/swfobject.js"></script>
-	<script type="text/javascript" src="/assets/js/highslide/highslide-sitesettings.js"></script>
+	<script type="text/javascript" src="{{ "/assets/js/highslide/easing_equations.js" | relative_url }}"></script>
+	<script type="text/javascript" src="{{ "/assets/js/highslide/swfobject.js" | relative_url }}"></script>
+	<script type="text/javascript" src="{{ "/assets/js/highslide/highslide-sitesettings.js" | relative_url }}"></script>
 	<script type="text/javascript">
-		hs.graphicsDir = "/assets/js/highslide/graphics/";
+		hs.graphicsDir = "{{ "/assets/js/highslide/graphics/" | relative_url }}";
 	</script>
-	<link rel="stylesheet" href="http://users.sch.gr/stfotoglou/joomla/mambots/content/highslide/highslide-stylesheet.css" type="text/css" />
-	<!-- highslide config ends here -->
+	<link rel="stylesheet" href="{{ "/assets/js/highslide/highslide-stylesheet.css" | relative_url }}" type="text/css" />
+    <!-- highslide config ends here -->
   </head>
   <body>
     <div class="wrapper">
