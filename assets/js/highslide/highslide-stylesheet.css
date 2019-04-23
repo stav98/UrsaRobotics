@@ -49,7 +49,7 @@ a.highslide-credits:hover, a.highslide-credits:hover i {
 	border: 1px solid black;
 	background-color: white;
 	padding-left: 22px;
-	background-image: url(/joomla15/plugins/content/highslide/graphics/loader.white.gif);
+	background-image: url(graphics/loader.white.gif);
 	background-repeat: no-repeat;
 	background-position: 3px 1px;
 }
@@ -71,7 +71,7 @@ a.highslide-credits:hover, a.highslide-credits:hover i {
 
 /* full expand icon size and margins */
 a.highslide-full-expand {
-	background: url(/joomla15/plugins/content/highslide/graphics/fullexpand.gif) no-repeat;
+	background: url(graphics/fullexpand.gif) no-repeat;
 	display: block;
 	margin: 0 10px 10px 0;
 	width: 34px;
