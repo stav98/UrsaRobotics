@@ -1,0 +1,99 @@
+.highslide {
+	outline: none;
+}
+.highslide-active-anchor img {
+	visibility: hidden;
+}
+.highslide-overlay {
+	display: none;
+}
+.highslide-wrapper {
+}
+
+/* Beginning of inserted CSS configuration parameters */
+.highslide-wrapper {
+	background: white;
+}
+
+.highslide-caption {
+	border: 2px solid white;
+	border-top: none;
+	font-family: Verdana, Helvetica;
+	font-size: 10pt;
+	padding: 5px;
+	background-color: white;
+}
+
+/* credits */
+a.highslide-credits, a.highslide-credits i {
+	padding: 2px;
+	color: silver;
+	text-decoration: none;
+	font-size: 10px;
+}
+
+a.highslide-credits:hover, a.highslide-credits:hover i {
+	color: white;
+	background-color: gray;
+}
+
+/* loading icon and style*/
+.highslide-loading {
+	display: block;
+	color: black;
+	font-size: 8pt;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 2px;
+	border: 1px solid black;
+	background-color: white;
+	padding-left: 22px;
+	background-image: url(/joomla15/plugins/content/highslide/graphics/loader.white.gif);
+	background-repeat: no-repeat;
+	background-position: 3px 1px;
+}
+
+/* 2-pixel gray border around thumbnail */
+.highslide img {
+	border: 2px solid gray;
+}
+
+/* 2-pixel silver border around thumbnail when mouse hovers over it */
+.highslide:hover img {
+	border: 2px solid silver;
+}
+
+/* 5-pixel white border around popup image */
+.highslide-image {
+	border: 5px solid white;
+}
+
+/* full expand icon size and margins */
+a.highslide-full-expand {
+	background: url(/joomla15/plugins/content/highslide/graphics/fullexpand.gif) no-repeat;
+	display: block;
+	margin: 0 10px 10px 0;
+	width: 34px;
+	height: 34px;
+}
+.highslide-image-blur {
+}
+.highslide-caption {
+	display: none;
+}
+.highslide-dimming {
+	position: absolute;
+	width: 100%;
+	background: black;
+}
+.highslide-html-content {
+	position: absolute;
+    display: none;
+}
+.highslide-display-block {
+	display: block;
+}
+.highslide-display-none {
+	display: none;
+}
