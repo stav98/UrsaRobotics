@@ -2,39 +2,31 @@
 layout: default
 ---
 <div style="text-align: justify;">
- <h1>Σχεδιασμός μακέτας</h1>
- <p>Αρχικά τον Φεβρουάριο '19 σχεδιάσαμε ένα τρισδιάστατο μοντέλο του σπιτιού με το σχεδιαστικό πρόγραμμα Sketchup 2016. Σκοπεύουμε να μεταφέρουμε το μοντέλο στο Free Cad το οποίο είναι ένα πολύ ισχυρό πρόγραμμα σχεδίασης τρισδιάστατων αντικειμένων. Το Free Cad είναι λογισμικό ανοιχτού κώδικα.</p>
- <p>Ενώ αρχικά σκεφτόμασταν να κατασκευάσουμε δυώροφο σπίτι τελικά καταλήξαμε σε ισόγειο με 8 χώρους. Ο λόγος είναι η καλύτερη οπτική - επόπτευση που μας παρέχει το ένα επίπεδο. Από πάνω θα υπάρχει plexiglass ώστε ο μαθητής να βλέπει το εσωτερικό όλων των χώρων.</p>
- <p>Οι χώροι είναι:</p>
+ <h1>Σχεδιασμός Συστήματος</h1>
+ <p>Όπως φαίνεται και στο block διάγραμμα που ακολουθεί, ο εγκέφαλος όλου του συστήματος είναι το Raspberry Pi. Το πρωτόκολλο το οποίο θα χρησιμοποιήσουμε είναι το <a href="https://en.wikipedia.org/wiki/MQTT" target="_blank">MQTT</a>. 'Ετσι στο Raspberry λειτουργεί ένας <a href="https://en.wikipedia.org/wiki/Message_broker" target="_blank">mqtt broker</a> μέσω του οποίου ανταλλάσσονται τα μηνύματα subscribe – publish από τους πελάτες. Επιπλέον λειτουργεί και το Node-Red που μας παρέχει την λογική και το όμορφο γραφικό περιβάλλον, μέσου του οποίου μπορούμε να αλληλεπιδράσουμε με το σύστημα.</p>
+ <p>Για να μπορέσει το Raspberry να δώσει εντολές σε διακόπτες ή να διαβάσει κάποιους αισθητήρες, απαιτείται και κάτι ακόμη. Αυτό είναι ο μικροελεγκτής ο οποίος θα δέχεται οδηγίες από το Raspberry Pi και θα βγάζει ή θα δέχεται τα κατάλληλα σήματα ώστε να επικοινωνεί με τις διάφορες συσκευές του σπιτιού.</p>
+ <p>Για να υπάρχει επικοινωνία χωρίς καλωδιακή υποδομή, θα χρησιμοποιήσουμε ασύρματη επικοινωνία WiFi. Για τον λόγο αυτό, χρησιμοποιούμε το <a href="https://www.nodemcu.com/index_en.html" target="_blank">module Node-MCU</a> το οποίο έχει τον ισχυρό μικροελεγκτή των 32bit ESP-8266. Εναλλακτικά θα μπορούσαμε να χρησιμοποιήσουμε τον διπύρηνο και ακόμη πιο ισχυρό ESP-32. Μέσα στην Node-MCU υπάρχει ένα πρόγραμμα που λειτουργεί ως πελάτης mqtt και επιπλέον αποκωδικοποιεί τις εντολές και βγάζει τα κατάλληλα σήματα στους ακροδέκτες ή δέχεται δεδομένα σε ψηφιακή ή αναλογική μορφή και τα μεταφέρει στον broker. Όλα τα προηγούμενα προγραμματίζονται σε Micro Python.</p>
+ <p>Το Node-MCU εξ' ορισμού έχει εγκατεστιμένη μια έκδοση της LUA. Εμείς σβήνουμε τον διεμηνευτή της LUA και βάζουμε την Micro Python.</p>
+ <p>Επειδή το Node-MCU έχει περιορισμένο αριθμό ακίδων, χρησιμοποιούμε και ένα Arduino Nano το οποίο συνδέεται με το Node-MCU μέσω του διαύλου I2C και λειτουργεί ως μονάδα επέκτασης θυρών (port expander). Το arduino μας δίνει επιπλέον 20 ακροδέκτες.</p>
+ <center>
+ <a href="{{ "/assets/images/block_diagram.png" | relative_url }}" onclick="return hs.expand(this)" class="highslide" target="_self">
+   <img src="{{ "/assets/images/block_diagram_small.png" | relative_url }}" alt="Μεγένθυση" title="Μεγένθυση" style="float: center; margin: 5px; border: 1px solid #000000; width: 300px;">
+ </a>
+ </center>
+ <p>Οι ακροδέκτες αυτοί μπορούν να αλλάξουν χρήση και μπορεί να είναι:</p>
   <ul>
-   <li>Καθιστικό</li>
-   <li>Τραπεζαρία</li>
-   <li>Κουζίνα</li>
-   <li>Μπάνιο</li>
-   <li>Κρεβατοκάμαρα</li>
-   <li>Παιδικό δωμάτιο</li>
-   <li>Χώρος στάθμευσης (Γκαράζ)</li>
-   <li>Κήπος</li>
+   <li>Ψηφιακές είσοδοι (18)</li>
+   <li>Ψηφιακές έξοδοι (18)</li>
+   <li>Αναλογικές είσοδοι (8)</li>
+   <li>Αναλογικές έξοδοι PWM (6)</li>
   </ul>
-  <table>
-   <tr>
-    <td>
-     <a href="{{ "/assets/images/maketa_3d.jpg" | relative_url }}" onclick="return hs.expand(this)" class="highslide" target="_self">
-      <img src="{{ "/assets/images/maketa_3d_small.jpg" | relative_url }}" alt="Μεγένθυση" title="Μεγένθυση" style="float: center; margin: 5px; border: 1px solid #000000; width: 400px;">
-     </a>
-    </td>
-    <td>
-     <a href="{{ "/assets/images/sxediasmos.jpg" | relative_url }}" onclick="return hs.expand(this)" class="highslide" target="_self">
-      <img src="{{ "/assets/images/sxediasmos_small.jpg" | relative_url }}" alt="Μεγένθυση" title="Μεγένθυση" style="float: center; margin: 5px; border: 1px solid #000000; width: 380px;">
-     </a>
-    </td>
-    <td>
-     <a href="{{ "/assets/images/maketa2.jpg" | relative_url }}" onclick="return hs.expand(this)" class="highslide" target="_self">
-      <img src="{{ "/assets/images/maketa2_small.jpg" | relative_url }}" alt="Μεγένθυση" title="Μεγένθυση" style="float: center; margin: 5px; border: 1px solid #000000; width: 400px;">
-     </a>
-    </td>
-   </tr>
-  </table>
+ <p>Η μακέτα έχει τον ελάχιστο αριθμό ακροδεκτών με λίγες συσκευές από κάθε είδος ώστε να είναι δυνατή η χρήση της ως εποπτικού μέσου και η πραγματοποίηση εργαστηριακών ασκήσεων. Σε ένα πραγματικό σπίτι οι απαιτήσεις σε ακροδέκτες εισόδου εξόδου είναι πολύ περισσότερες. Έτσι μπορούμε να επεκτείνουμε το σύστημα με τους εξής τρόπους:</p>
+ <ol>
+   <li>Χρήση των ακίδων GPIO του Raspberry. Μέχρι στιγμής καμία ακίδα του συνδετήρα επέκτασης GPIO του Raspberry, δεν έχει χρησιμοποιηθεί.</li>
+   <li>Προσθήκη επιπλέον arduino Nano στον δίαυλο I2C. Για κάθε Arduino έχουμε επιπλέον 20 ακίδες.</li>
+   <li>Χρήση κατανεμημένων μονάδων Node MCU (ίσως χωρίς Arduino expander) αρκεί να υπάρχει δίκτυο WiFI. Αυτή η λύση είναι η καλύτερη για παλιά σπίτια στα οποία δεν υπάρχει πρόβλεψη για τερματισμό όλων των καλωδίων σ’ ένα σημείο του κεντρικού πίνακα. Η κάθε μονάδα συνδέεται μέσω WiFi στο Raspberry το οποίο έχει στατική διεύθυνση IP και δημοσιεύει ή δέχεται μηνύματα από τον mosquitto mqtt broker.</li>
+ </ol>
+
  <!--href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}"-->
  <a href="./index.html">Αρχική</a>
 </div>

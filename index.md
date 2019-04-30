@@ -29,5 +29,7 @@ layout: default
  <p>Από αυτή την ιστοσελίδα θα παρουσιάσουμε τα στάδια κατασκευής του έργου.</p>
  <center>
    <iframe allowfullscreen="" frameborder="0" height="270" src="https://www.youtube.com/embed/EgXMZQicLHs" width="480"></iframe>
+   <p><small>Το video με την παρουσίαση του έργου.</small></p>
  </center>
+ <p>Τελευταία ενημέρωση 29-4-2019</p>
 </div>
