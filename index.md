@@ -35,5 +35,17 @@ layout: default
    <iframe allowfullscreen="" frameborder="0" height="270" src="https://www.youtube.com/embed/UdXU7kbgIFc" width="480"></iframe>
    <p><small>Γύρω από τη μακέτα.</small></p>
  </center>
- <p>Τελευταία ενημέρωση 30-4-2019</p>
+ <p>Τα στάδια υλοποίησης του έργου είναι τα ακόλουθα:</p>
+  <ol>
+   <li><a href="{{site.baseurl}}/task1.html"  title="Μετάβαση">Σχεδιασμός συστήματος</a></li>
+   <li><a href="{{site.baseurl}}/task2.html"  title="Μετάβαση">Σχεδιασμός μακέτας</a></li>
+   <li><a href="{{site.baseurl}}/task3.html"  title="Μετάβαση">Σχεδιασμός ηλεκτρονικού κυκλώματος</a></li>
+   <li><a href="{{site.baseurl}}/task4.html"  title="Μετάβαση">Υλικά - Κόστος</a></li>
+   <li><a href="{{site.baseurl}}/task5.html"  title="Μετάβαση">Κατασκευή μακέτας</a></li>
+   <li><a href="{{site.baseurl}}/task6.html"  title="Μετάβαση">Ηλεκτρονική κατασκευή</a></li>
+   <li><a href="{{site.baseurl}}/task7.html"  title="Μετάβαση">Προγραμματισμός ελεγκτή</a></li>
+   <li><a href="{{site.baseurl}}/task8.html"  title="Μετάβαση">Ηλεκτρολογικές συνδέσεις</a></li>
+  </ol>
+ <br><br>
+ <p><center><b>Τελευταία ενημέρωση 30-4-2019</b></center></p>
 </div>
