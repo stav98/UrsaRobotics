@@ -19,7 +19,7 @@ layout: default
   <ol>
    <li>Αρχείο ορισμών <a href="https://github.com/stav98/UrsaRobotics_SmartHome/blob/master/micropython/src/definitions.py" target="_code">definitions.py</a>.</li>
    <li>Αρχείο συναρτήσεων <a href="https://github.com/stav98/UrsaRobotics_SmartHome/blob/master/micropython/src/functions.py" target="_code">functions.py</a>.</li>
-   <li>Έτοιμο αρχείο με κώδικα διαχείρισης για τον αισθητήρα πίεσης, υγρασίας και θερμοκρασίας <a href="https://github.com/stav98/UrsaRobotics_SmartHome/blob/master/micropython/src/bme280.py" target="_code">bme280.py</a>.</li>
+   <li>Έτοιμη βιβλιοθήκη με τον κώδικα ελέγχου του αισθητήρα πίεσης, υγρασίας και θερμοκρασίας <a href="https://github.com/stav98/UrsaRobotics_SmartHome/blob/master/micropython/src/bme280.py" target="_code">bme280.py</a>.</li>
    <li>Αρχείο με τον κυρίως κώδικα <a href="https://github.com/stav98/UrsaRobotics_SmartHome/blob/master/micropython/src/main.py" target="_code">main.py</a>.</li>
   </ol>
  <p>Επίσης υπαρχει το αρχείο upload το οποίο πρέπει να το κάνουμε εκτελέσιμο +x και ανεβάζει τον κώδικα στο Node-MCU</p>
