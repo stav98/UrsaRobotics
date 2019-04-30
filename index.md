@@ -26,10 +26,14 @@ layout: default
   </a>
  </center>
  <p>Το έργο μπορεί να χρησιμοποιηθεί ως εποπτικό μέσο για την διδασκαλία των τεχνολογιών IOT σε μαθητές πληροφορικής, ηλεκτρονικής και ηλεκτρολογίας, αλλά και σε πραγματικά σπίτια.</p>
- <p>Από αυτή την ιστοσελίδα θα παρουσιάσουμε τα στάδια κατασκευής του έργου.</p>
+ <p>Σ' αυτή την ιστοσελίδα παρουσιάσουμε τα στάδια κατασκευής του έργου. Ακολουθεί το video της τελικής παρουσίασης. Η παρουσίαση σε μορφή pdf βρίσκεται <a href="https://github.com/stav98/UrsaRobotics_SmartHome/blob/master/documentation/SmartHome_%CE%A0%CE%B1%CF%81%CE%BF%CF%85%CF%83%CE%AF%CE%B1%CF%83%CE%B7.pdf" target="_blank">εδώ</a>.</p>
  <center>
    <iframe allowfullscreen="" frameborder="0" height="270" src="https://www.youtube.com/embed/EgXMZQicLHs" width="480"></iframe>
    <p><small>Το video με την παρουσίαση του έργου.</small></p>
  </center>
- <p>Τελευταία ενημέρωση 29-4-2019</p>
+ <center>
+   <iframe allowfullscreen="" frameborder="0" height="270" src="https://www.youtube.com/embed/UdXU7kbgIFc" width="480"></iframe>
+   <p><small>Γύρω από τη μακέτα.</small></p>
+ </center>
+ <p>Τελευταία ενημέρωση 30-4-2019</p>
 </div>
