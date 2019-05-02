@@ -47,5 +47,5 @@ layout: default
    <li><a href="{{site.baseurl}}/task8.html"  title="Μετάβαση">Ηλεκτρολογικές συνδέσεις</a></li>
   </ol>
  <br><br>
- <p><center><b>Τελευταία ενημέρωση 30-4-2019</b></center></p>
+ <p><center><b>Τελευταία ενημέρωση 2-5-2019</b></center></p>
 </div>
