@@ -20,6 +20,7 @@ layout: default
  <p>Αν θέλουμε να ακούσουμε άλλη ροή αρκεί να τη δηλώσουμε στο string station γραμμή 15.</p>
  <center>
    <iframe width="560" height="315" src="https://www.youtube.com/embed/2SjtGgD_fMg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <p><small>Επίδειξη ομιλίας TTS και αναπαραγωγής μουσικής.</small></p>
  </center>
  <a href="./index.html">Αρχική</a>
 </div>
