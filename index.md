@@ -53,5 +53,5 @@ layout: default
    <li><a href="{{site.baseurl}}/task14.html"  title="Μετάβαση">Βελτιώσεις - Επίλογος</a></li>
   </ol>
  <br><br>
- <p><center><b>Τελευταία ενημέρωση 2-5-2019</b></center></p>
+ <p><center><b>Τελευταία ενημέρωση 5-5-2019</b></center></p>
 </div>
