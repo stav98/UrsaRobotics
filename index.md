@@ -49,6 +49,8 @@ layout: default
    <li><a href="{{site.baseurl}}/task10.html"  title="Μετάβαση">T.T.S. και Μουσική</a></li>
    <li><a href="{{site.baseurl}}/task11.html"  title="Μετάβαση">Αναγνώριση ομιλίας</a></li>
    <li><a href="{{site.baseurl}}/task12.html"  title="Μετάβαση">Το περιβάλλον Node-Red</a></li>
+   <li><a href="{{site.baseurl}}/task13.html"  title="Μετάβαση">Χρήση φορητών συσκευών</a></li>
+   <li><a href="{{site.baseurl}}/task14.html"  title="Μετάβαση">Βελτιώσεις - Επίλογος</a></li>
   </ol>
  <br><br>
  <p><center><b>Τελευταία ενημέρωση 2-5-2019</b></center></p>
