@@ -3,7 +3,7 @@ layout: default
 ---
 <div style="text-align: justify;">
  <h1>Εισαγωγή</h1>
- <p>Είμαστε η ομάδα <b>Ursa Robotics</b> από το <a href="http://1epal-prevez.pre.sch.gr/" target="_blank" title="Μετάβαση">1ο ΕΠΑ.Λ.</a> - <a href="http://1sek-prevez.pre.sch.gr/" target="_blank" title="Μετάβαση">1ο Ε.Κ. Πρέβεζας</a>. Συμμετέχουμε στον πανελλήνιο διαγωνισμό εκπαιδευτικής ρομποτικής του <a href="https://robotics.ellak.gr/" target="_blank" title="Μετάβαση">ΕΛ/ΛΑΚ</a> για το σχολ. έτος 2018-19.</p>
+ <p>Είμαστε η ομάδα <b><a href="{{site.baseurl}}/about.html"  title="Λίγα λόγια για εμάς.">Ursa Robotics</a></b> από το <a href="http://1epal-prevez.pre.sch.gr/" target="_blank" title="Μετάβαση">1ο ΕΠΑ.Λ.</a> - <a href="http://1sek-prevez.pre.sch.gr/" target="_blank" title="Μετάβαση">1ο Ε.Κ. Πρέβεζας</a>. Συμμετέχουμε στον πανελλήνιο διαγωνισμό εκπαιδευτικής ρομποτικής του <a href="https://robotics.ellak.gr/" target="_blank" title="Μετάβαση">ΕΛ/ΛΑΚ</a> για το σχολ. έτος 2018-19.</p>
 
  <p>Η ομάδα μας κατασκεύασε μια μακέτα σπιτιού με γκαράζ στο οποίο φαίνονται όλες οι ηλεκτρικές συσκευές –
     εξαρτήματα. Με ένα όμορφο γραφικό περιβάλλον μπορούμε να σχεδιάσουμε την λογική αυτοματισμού του συστήματος
@@ -45,6 +45,10 @@ layout: default
    <li><a href="{{site.baseurl}}/task6.html"  title="Μετάβαση">Ηλεκτρονική κατασκευή</a></li>
    <li><a href="{{site.baseurl}}/task7.html"  title="Μετάβαση">Προγραμματισμός ελεγκτή</a></li>
    <li><a href="{{site.baseurl}}/task8.html"  title="Μετάβαση">Ηλεκτρολογικές συνδέσεις</a></li>
+   <li><a href="{{site.baseurl}}/task9.html"  title="Μετάβαση">Εγκατάσταση προγραμμάτων στο Raspberry Pi</a></li>
+   <li><a href="{{site.baseurl}}/task10.html"  title="Μετάβαση">T.T.S. και Μουσική</a></li>
+   <li><a href="{{site.baseurl}}/task11.html"  title="Μετάβαση">Αναγνώριση ομιλίας</a></li>
+   <li><a href="{{site.baseurl}}/task12.html"  title="Μετάβαση">Το περιβάλλον Node-Red</a></li>
   </ol>
  <br><br>
  <p><center><b>Τελευταία ενημέρωση 2-5-2019</b></center></p>
