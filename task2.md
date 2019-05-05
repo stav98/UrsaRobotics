@@ -16,6 +16,12 @@ layout: default
    <li>Χώρος στάθμευσης (Γκαράζ)</li>
    <li>Κήπος</li>
   </ul>
+  <p>Στο σχήμα φαίνεται η τοποθέτηση των εξαρτημάτων μέσα στη μακέτα. Υπάρχει μια αλλαγή στο σύστημα σκίασης, το οποίο τελικά το τοποθετήσαμε μπροστά σε μορφή πέργκολας και όχι στο παιδικό δωμάτιο που φαίνεται στο σχήμα.</p>
+  <center>
+  <a href="{{ "/assets/images/maketa_nodim_katopsi1.png" | relative_url }}" onclick="return hs.expand(this)" class="highslide" target="_self">
+   <img src="{{ "/assets/images/maketa_nodim_katopsi1_small.png" | relative_url }}" alt="Μεγένθυση" title="Μεγένθυση" style="float: center; margin: 5px; border: 1px solid #000000; width: 400px;">
+  </a>
+  </center>
   <table>
    <tr>
     <td>
