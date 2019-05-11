@@ -56,6 +56,6 @@ layout: default
  <p><center><b>Τελευταία ενημέρωση 5-5-2019</b></center></p>
  <p><center>
    <a href="https://smallseotools.com/visitor-hit-counter/" target="_blank" title="Visitor Hit Counter">
-   <img src="https://smallseotools.com/counterDisplay?code=4d886149e574616f5b46ac333233c7c6&style=0014&pad=5&type=ip& initCount=10"  title="Visitor Hit Counter" Alt="Visitor Hit Counter" border="0">
+   <img src="https://smallseotools.com/counterDisplay?code=4d886149e574616f5b46ac333233c7c6&style=0013&pad=5&type=ip& initCount=10"  title="Μετρητής επισκέψεων" Alt="Μετρητής επισκέψεων" border="1">
  </a></center></p>
 </div>
