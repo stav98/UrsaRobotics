@@ -23,6 +23,6 @@ layout: default
   </a>
  </center>
  <p>Για να δοκιμάσετε το δικό μας flow πατάμε πάνω αριστερά στις τρεις γραμμές - Import - Clipboard. Αντιγράφετε το <a href="https://raw.githubusercontent.com/stav98/UrsaRobotics_SmartHome/master/node-red/src/flow-4-5-19.txt" target="code">flow-dd-mm-yy.txt</a> στο πρόχειρο και το επικολλάτε στο πλαίσιο κειμένου και μετά πατάτε το κουμπί Import.</p>
- <p>Θα δημοσιεύσουμε μερικά φύλλα εργασίας με απλές ασκήσεις προγραμματισμού πάνω στα διαγράμματα ροής του Node-Red.</p>
+ <p>Θα δημοσιεύσουμε μερικά <a href="{{site.baseurl}}/2019/04/27/fyllo_ergasias1.html"  title="Μετάβαση">φύλλα εργασίας</a> με απλές ασκήσεις προγραμματισμού πάνω στα διαγράμματα ροής του Node-Red.</p>
  <a href="./index.html">Αρχική</a>
 </div>
